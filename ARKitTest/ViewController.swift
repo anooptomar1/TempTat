@@ -11,9 +11,9 @@ import SpriteKit
 import ARKit
 
 class ViewController: UIViewController, ARSKViewDelegate {
-    
+
     @IBOutlet var sceneView: ARSKView!
-    
+    var index = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +28,20 @@ class ViewController: UIViewController, ARSKViewDelegate {
         if let scene = SKScene(fileNamed: "Scene") {
             sceneView.presentScene(scene)
         }
+        
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
+        
+        
+     
+        
+        
+
+        
     }
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,14 +65,25 @@ class ViewController: UIViewController, ARSKViewDelegate {
         // Release any cached data, images, etc that aren't in use.
     }
     
-    // MARK: - ARSKViewDelegate
+    
+    
+   
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
+        
+        
+
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "👾")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        let rootNode = SKLabelNode(text: "")
+      
+        let imgNode = SKSpriteNode(imageNamed: "dogImg")
+        imgNode.xScale = 0.05
+        imgNode.yScale = 0.05
+
+        rootNode.horizontalAlignmentMode = .center
+        rootNode.verticalAlignmentMode = .center
+        rootNode.addChild(imgNode)
+        return rootNode;
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {
@@ -77,3 +101,24 @@ class ViewController: UIViewController, ARSKViewDelegate {
         
     }
 }
+extension UIViewController{
+    
+    @objc func swipeAction(swipe: UISwipeGestureRecognizer){
+        
+        switch (swipe.direction.rawValue){
+            
+        case 2:
+            print("you swiped");
+            break;
+            
+        default:
+            
+            break;
+            
+        }
+        
+        
+    }
+    
+}
+

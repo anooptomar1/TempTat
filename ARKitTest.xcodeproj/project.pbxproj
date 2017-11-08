@@ -16,6 +16,8 @@
 		74241E3E1FB0101400C12306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74241E3C1FB0101400C12306 /* LaunchScreen.storyboard */; };
 		74241E491FB0101400C12306 /* ARKitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74241E481FB0101400C12306 /* ARKitTestTests.swift */; };
 		74241E541FB0101400C12306 /* ARKitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74241E531FB0101400C12306 /* ARKitTestUITests.swift */; };
+		74241E621FB0DC9C00C12306 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74241E611FB0DC9C00C12306 /* Images.swift */; };
+		7451F9D91FB13B8F008FAEED /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7451F9D81FB13B8F008FAEED /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		74241E4F1FB0101400C12306 /* ARKitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74241E531FB0101400C12306 /* ARKitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitTestUITests.swift; sourceTree = "<group>"; };
 		74241E551FB0101400C12306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74241E611FB0DC9C00C12306 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7451F9D81FB13B8F008FAEED /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +109,12 @@
 				74241E311FB0101400C12306 /* Scene.sks */,
 				74241E331FB0101400C12306 /* Scene.swift */,
 				74241E351FB0101400C12306 /* ViewController.swift */,
+				7451F9D81FB13B8F008FAEED /* CustomButton.swift */,
 				74241E371FB0101400C12306 /* Main.storyboard */,
 				74241E3A1FB0101400C12306 /* Assets.xcassets */,
 				74241E3C1FB0101400C12306 /* LaunchScreen.storyboard */,
 				74241E3F1FB0101400C12306 /* Info.plist */,
+				74241E611FB0DC9C00C12306 /* Images.swift */,
 			);
 			path = ARKitTest;
 			sourceTree = "<group>";
@@ -267,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				74241E361FB0101400C12306 /* ViewController.swift in Sources */,
+				74241E621FB0DC9C00C12306 /* Images.swift in Sources */,
 				74241E341FB0101400C12306 /* Scene.swift in Sources */,
 				74241E301FB0101400C12306 /* AppDelegate.swift in Sources */,
+				7451F9D91FB13B8F008FAEED /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
